@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.back{
+     width: 50vw;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-left: 20%;
+    }
+.image{
+    background-image: url("abhishek.jpg");
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: cover;
+    border: solid white;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+   
+}
+.name{
+     font-size: medium;
+     font-style: normal;
+     color: rgb(127, 255, 217);
+     font-family:'Times New Roman', Times, serif;
+     font-weight: lighter;
+}
+.head2{
+    color: white;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+.head3{
+    color:rgb(127, 255, 217);
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+.abt{
+    color: white;
+    padding-bottom: 2%;
+    white-space: inherit;
+}
+.contbutton{
+    height: 30px;
+    width: 80px;
+    background-color: transparent;
+    color: rgb(127, 255, 217);
+    border: solid rgb(127, 255, 217);
+    border-radius: 20px;
+    
+}
+.contbutton:hover{
+    color: black;
+    background-color: rgb(127, 255, 217);
+    transition: ease-in-out 0.7s;
+
+}
+.control{
+    text-align: justify;
+    width:40%;
+    
+    
+}
+@media(min-width:464px)and (max-width:900px){
+    *{
+        margin-top: 20%;
+
+    }
+    .back{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content:start;
+    }
+    .image{
+        padding-top: 300px;
+        padding-left: 120px;
+        height: auto;
+    }
+    .control .name{
+        font-size: x-large;
+        margin-left: -30px;
+    }
+    .control .head2{
+        font-size: xx-large;
+        margin-left: -30px;
+    }
+    .control .head3{
+        font-size: 40px;
+        margin-left: -30px;
+    }
+    .control .abt{
+        display: flex;
+        text-align: left;
+        margin-left: 14px;
+        justify-content: space-evenly;
+    }
+    .control .contbutton{
+        margin-left: -20px;
+        
+        
+    }
+}
+@media (min-width:240px) and (max-width:463px){
+    .back{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        margin-left: -10px;
+        padding-top: 20%;
+        padding-left: 20%;
+        height: 80px;
+        width: 85px;
+    }
+    .control{
+        font-size: x-small;
+        margin-left: -100px;
+    }
+    .control .abt{
+        margin-left: -30px;
+        font-size: 8px;
+    }
+}
